@@ -1,6 +1,12 @@
 # Exemplo_Transformacao
 
-*Conversão de imagem RGB em imagem Grayscale*<br>
+<h3><b>Transformações</b><h3><br>
+Em resumo, o código gera o negativo de uma imagem colorida, exibe a imagem original e o negativo. Em seguida, aplica uma transformação linear na imagem em escala de cinza para ajustar o contraste, exibindo a imagem original e a imagem com contraste ajustado.<br><br>
+
+<h3><b>Filtro Espacial</b><h3><br>
+Em resumo, o código realiza uma suavização na imagem em escala de cinza, aplicando um filtro de média ponderada através da convolução com um kernel 5x5. Em seguida, exibe a imagem original e a imagem suavizada.<br><br>
+  
+<h3><b>Conversão de imagem RGB em imagem Grayscale</b><h3><br>
 O código acima utiliza a biblioteca OpenCV para processar imagens e a biblioteca NumPy para operações numéricas. Ele também usa a biblioteca Matplotlib para exibir gráficos e imagens.
 A linha import cv2 importa a biblioteca OpenCV, enquanto import numpy as np importa a biblioteca NumPy. A linha import matplotlib.pyplot as plt importa a biblioteca Matplotlib.
 A linha from google.colab.patches import cv2_imshow é específica para o ambiente de programação Google Colab e permite exibir imagens usando a função cv2_imshow.
@@ -11,3 +17,5 @@ A seguir, é aplicada a conversão ponderada para converter a imagem colorida em
 A conversão ponderada é aplicada multiplicando cada componente de cor pelos valores de ponderação (0,299 para o canal Azul, 0,587 para o canal Verde e 0,114 para o canal Vermelho) e somando-os. O resultado é armazenado na variável img_grayscale_pondered.
 Em seguida, a matriz é convertida em um array NumPy com o tipo de dados uint8 usando np.array(img_grayscale_pondered, dtype=np.uint8).
 Por fim, a função cv2_imshow(img_grayscale_pondered) é usada para exibir a imagem convertida em tons de cinza ponderados no Google Colab.
+
+
