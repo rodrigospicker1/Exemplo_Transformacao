@@ -1,6 +1,6 @@
 # Exemplo_Transformacao
 
-*Conversão de imagem RGB em imagem Grayscale*
+*Conversão de imagem RGB em imagem Grayscale*<br>
 O código acima utiliza a biblioteca OpenCV para processar imagens e a biblioteca NumPy para operações numéricas. Ele também usa a biblioteca Matplotlib para exibir gráficos e imagens.
 A linha import cv2 importa a biblioteca OpenCV, enquanto import numpy as np importa a biblioteca NumPy. A linha import matplotlib.pyplot as plt importa a biblioteca Matplotlib.
 A linha from google.colab.patches import cv2_imshow é específica para o ambiente de programação Google Colab e permite exibir imagens usando a função cv2_imshow.
